@@ -1,0 +1,243 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "SF Pro", "San Francisco", Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+header #logo {
+    height: 3rem;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    border-radius: 50rem;
+    transition: background-color 0.5s ease-in-out;
+    padding: 0.7rem 2rem;
+}
+
+.button:hover {
+    background-color: #333;
+    text-decoration: none;
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    width: 70%;
+    margin: 0 auto;
+}
+
+section img {
+    /* width: 70%; */
+    padding: 1rem;
+    /* box-sizing: border-box; */
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+section h1, h2, h3 {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+/* #free_note {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+} */
+
+/* section .description {
+    width: 80%;
+} */
+
+section .features h1 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+section .features ul {
+    list-style-type: disc;
+    margin: 0;
+}
+
+#try_it_out_now h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+#download_button_hero {
+    font-size: 1.5rem;
+    display: none;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#available_on_footnote {
+    display: none;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 0.2;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+#support_button {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 1.5rem;
+}
+
+#privacy-policy {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#privacy-policy h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#privacy-policy h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* Removed forced bottom spacing; footer sticks to bottom via flex layout */
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    flex: 1; /* push footer to bottom when content is short */
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: rgb(214, 214, 214);
+}
+
+footer .copyright {
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    /* #hero {
+        flex-direction: column-reverse;
+    }
+
+    section {
+        flex-direction: column;
+    } */
+
+    /* section img {
+        width: 100%;
+        padding: 0;
+    } */
+
+    section {
+        width: 100%;
+    }
+
+    header #logo {
+        height: 2rem;
+    }
+    
+    #privacy-policy {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 550px) {
+    header #download_button_header {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    }
+} */
+
+@media (max-width: 550px) {
+    header {
+        display: block;
+        justify-content: center;
+    }
+    header #logo {
+        margin: 0 auto;
+    }
+    #download_button_hero {
+        display: block;
+    }
+    #available_on_footnote {
+        display: block;
+    }
+    #download_button_header {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    #download_button_hero {
+        font-size: 1.2rem;
+    }
+}

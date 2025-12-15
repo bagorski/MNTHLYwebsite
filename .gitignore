@@ -1,0 +1,17 @@
+# macOS metadata
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+
+# Env / local config
+.env
+.env.*
+.vscode/
