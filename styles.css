@@ -61,7 +61,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: top;
     width: 70%;
     margin: 0 auto;
 }
