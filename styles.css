@@ -57,7 +57,7 @@ header #logo {
     transition: transform 0.2s ease-in-out;
 }
 
-section {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,11 +65,28 @@ section {
     margin: 0 auto;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    object-fit: contain;
+    max-height: 80vh;
+    padding: 1rem;
+}
+
 section p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0;
     margin-bottom: 0.5rem;
+}
+
+section li {
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 section h1, h2, h3 {
@@ -181,6 +198,13 @@ footer .copyright {
     header #logo {
         margin: 0 auto;
     }
+
+    img {
+        max-height: 100vh;
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+
     #download_button_hero {
         display: block;
     }
